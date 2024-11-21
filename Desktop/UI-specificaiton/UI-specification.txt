@@ -1,0 +1,32 @@
+# User Management Screen - UI Specification
+
+This screen will allow system administrators to see the list of user in the system and create new users.
+
+# Screen Layout
+In the screen there are 3 different containers:
+1. Top: There is a rectangular bar on the top of the screen that has from left to right:
+    1. '+ New User' button: blue background, white text
+    2. 'Hide Disabled User' checkbox
+    3. 'Save User' button: blue background, white text
+
+2. Left: On the left here is a table of the users. The table has the columns:
+    1. ID: Unique ID of the user
+    2. User Name: The username of the user
+    3. Email: The e-mail of the user
+    4. Enabled: A boolean value to see if the user is currently enabled or not
+The column names are written in white text but has the background colour blue. The rows have the background colour one white and one faded blue. The white backgrounded rows have a dark gray text, the blue backgrounded rows have a black text.
+
+3. Right: There is a form to add new user. It has a caption: 'New User'. This caption has a very faded light coloured gray as background, the caption text itself is a darker gray. This form has 6 input fields and 4 text input fields positioned vertically one by one with the labels (labels are dark gray coloured):
+    1.'Username:'
+    2. 'Display Name:'
+    3. 'Phone:'
+    4. 'Email:'
+    5. Drop-down selection with the label 'User Roles:'. 3 options: 'Guest', 'Admin', 'SuperAdmin'. These options have white background, dark gray text. When you hover over it with the cursor, the option's backgroung colour is blue and the text is white.
+    6. Checkbox with the label: 'Enabled:'.
+
+#Functionality
+Using this screen an admin can see the list of users in the system and create a new user.
+- 'New User' button: Opens up the form to create a new user. (?)
+- 'Hide Disabled User' checkbox: When checked it hides the users in the table which has the 'Enabled' column value as false.
+- 'Save User' button: It is non-clickable when the new user form's fields are empty. When the fields are filled it is back to being clickable and has the same colour as the other button. It saves a new user or saves the edits of the chosen user.
+- User Table: It is possible the scroll in the table. It is also possible to sort them according to one of the columns. When clicked on one of the users, we see the pre-filled form of the user on the right. The information of the user can be edited in the form and saved by using the 'Save User' button.
